@@ -1,0 +1,41 @@
+// main: ../style.less
+.footer {
+    padding: 2rem 0;
+    background-color: @light-blue;
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.03rem;
+    
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copy {
+    display: flex;
+}
+p.footer__text, .footer__link {
+    margin-right: 1.5rem;
+}
+.footer__link {
+    color: @black;
+    transition: color .2s linear;
+    &:hover {
+        color: @blue;
+    }
+}
+.footer__social {
+    display: flex;
+    
+    
+}
+.social__icon {
+    color: @black;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-left: 1rem;
+    transition: transform .2s linear;
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
