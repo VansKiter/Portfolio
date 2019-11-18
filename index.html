@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700|Ubuntu&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700|Ubuntu&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Олександр Гончаров - твій "гарний знайомий" фронтендер</title>
 </head>
@@ -107,8 +107,12 @@
 
 
 <!--  Modals  -->
-<div class="modal">
+<div class="modal" style="display: none">
     <div class="modal__dialog">
+       
+       <button type="button" class="modal__close">
+           <img src="images/cancel.svg" alt="">
+       </button>
        
        <div class="modal-work">
            <div class="modal-work__preview">
@@ -121,13 +125,30 @@
                </div>
                
                <div class="modal-work__client">
-                   <div>Client:</div>
-                   <div>Creative Agency</div>
+                   <div class="modal-work__client-title">Client:</div>
+                   <div class="modal-work__client-company">Creative Agency</div>
                </div>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi, facilis a doloribus nisi odio. Aliquam ratione commodi, placeat cupiditate voluptatibus, quis, corporis expedita temporibus fuga eligendi voluptates cum delectus.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi, facilis a doloribus nisi odio. Aliquam ratione commodi, placeat cupiditate voluptatibus, quis, corporis expedita temporibus fuga eligendi voluptates cum delectus.</p>
+               <div class="modal-work__text">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi, facilis a doloribus nisi odio. Aliquam ratione commodi, placeat cupiditate voluptatibus, quis, corporis expedita temporibus fuga eligendi voluptates cum delectus.</p>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi, facilis a doloribus nisi odio. Aliquam ratione commodi, placeat cupiditate voluptatibus, quis, corporis expedita temporibus fuga eligendi voluptates cum delectus.</p>
+                </div>
+               <div class="modal-work__footer">
+                   <button class="modal-work__btn" type="button"><img src="images/left-arrow.svg" height="8" alt=""> Previous</button>
+                   <button class="modal-work__btn" type="button">Next <img src="images/right-arrow.svg" height="8" alt=""> </button>
+               </div>
            </div> <!-- /.modal-work__content -->
        </div> <!-- /.modal-work -->
+               
+    </div> <!-- /.modal__dialog -->
+</div> <!-- /.modal -->
+<div class="modal">
+    <div class="modal__dialog">
+       
+       <button type="button" class="modal__close">
+           <img src="images/cancel.svg" alt="">
+       </button>
+       
+       
                
     </div> <!-- /.modal__dialog -->
 </div> <!-- /.modal -->
