@@ -10,6 +10,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: @black;
+    
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 *,
 *:before,
@@ -35,3 +39,5 @@ a {
 @import "blocks/works";
 @import "blocks/promo";
 @import "blocks/footer";
+@import "blocks/modals";
+@import "blocks/modal-work";

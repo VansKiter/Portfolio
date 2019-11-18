@@ -22,4 +22,25 @@
     color: @blue;
     font-size: 1.6rem;
     font-weight: 600;
+    position: relative;
+    
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: @blue;
+        
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        transition: width .2s linear;
+    }
+    
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
 }
