@@ -6,6 +6,20 @@
     
 }
 
+.works__nav {
+    margin-top: 2rem;
+}
+.works__nav-link {
+    display: inline-block;
+    margin-right: 1rem;
+    color: @black;
+    font-size: .8rem;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .works__portfolio {
     display: flex;
     justify-content: space-between;
@@ -14,15 +28,21 @@
 
 }
 .works__site {
+    overflow: hidden;   
+    border-radius: 5px;
+    border: 1px solid fade(@gray, 20%);
+    
     display: flex;
     flex-direction: column;
     
-    margin-bottom: 1rem;
     
+    margin-bottom: 1rem;
+    &:hover {
+        box-shadow: 0px 1px 20px fade(@black, 30%);
+    }
 }
 
 .works__image {
-    border-radius: 5px;
     max-width: 100%;
     height: auto;
 }
@@ -30,5 +50,5 @@
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }

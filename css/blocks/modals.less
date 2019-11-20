@@ -1,7 +1,7 @@
 // main: ../style.less
 
 .modal {
-    display: flex;
+    display: none;
     padding: 0 1rem;
     overflow: auto;
     
@@ -13,6 +13,9 @@
     top: 0;
     left: 0;
     z-index: 100;
+    &.show {
+        display: flex;
+    }
 }
 .modal__dialog {
     width: 100%;
@@ -30,7 +33,7 @@
     position: absolute;
     top: .8rem;
     right: .8rem;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     padding: 0;
     border: 0;
