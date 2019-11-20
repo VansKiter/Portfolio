@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700|Ubuntu&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Олександр Гончаров - твій "гарний знайомий" фронтендер</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -141,17 +142,54 @@
                
     </div> <!-- /.modal__dialog -->
 </div> <!-- /.modal -->
+
+   
 <div class="modal">
-    <div class="modal__dialog">
+    <div class="modal__dialog modal__dialog--sm">
        
-       <button type="button" class="modal__close">
-           <img src="images/cancel.svg" alt="">
-       </button>
-       
-       
-               
+        <button type="button" class="modal__close">
+            <img src="images/cancel.svg" alt="">
+        </button>       
+    
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title">Contacts</h3>
+                <h4 class="modal__subtitle">Call me or send request</h4>
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                       <img class="contact__info-icon icon--sm" src="images/phone.svg" alt="">
+                        (099)291-21-19
+                    </li>
+                    <li class="contact__info-item">
+                       <img class="contact__info-icon icon--sm" src="images/mail.svg" alt="">
+                        honcharov.dev@gmail.com
+                    </li>
+                </ul>
+                <form class="form" action="/" method="post">
+                   <div class="form__group">
+                        <label class="label" for="input-email">Adress e-mail</label>
+                        <input type="email" class="input" for="" placeholder="mail@mail" id="input-email" name="input-email">
+                    </div>
+                    
+                    <div class="form__group">
+                        <label class="label" for="input-text">Request</label>
+                        <textarea class="textarea" name="input-text" id="input-text" cols="30" rows="10">You request</textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="hireme" type="submit">SEND</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="contact__right">
+                
+            </div>
+        </div>       
     </div> <!-- /.modal__dialog -->
 </div> <!-- /.modal -->
+
+
+
 
 </body>
 </html>
