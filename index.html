@@ -16,7 +16,7 @@
             <nav class="nav">
                 <a class="nav__link" href="#works-link">роботи</a>
                 <a class="nav__link" href="">про мене</a>
-                <a class="nav__link" href="">контакти</a>
+                <a class="nav__link" href="" data-modal="#modal_hireme">контакти</a>
                 <a class="nav__link nav__link--btn" href="" data-modal="#modal_hireme">написати</a>
             </nav>
         </div>
@@ -134,7 +134,7 @@
             <h2 class="title">Я відкритий до пропозицій</h2>
             <h3 class="subtitle">Всі ми знаємо, що нація прогресує в тандемі з суспільством. Ми намагаємось зробити світ кращим місцем, і ми працюємо з новими ідеями.</h3>
             <div class="promo__btn">
-                <a href="" class="hireme">Написати мені</a>
+                <a href="" class="hireme" data-modal="#modal_hireme">Написати мені</a>
             </div>
         </div>
     </div>
@@ -157,43 +157,6 @@
     </div>
 </footer>
 
-
-<!--  Modals  -->
-<div class="modal" id="modal_project_1">
-    <div class="modal__dialog">
-       
-       <button type="button" class="modal__close" data-close>
-           <img src="images/cancel.svg" alt="">
-       </button>
-       
-       <div class="modal-work">
-           <div class="modal-work__preview">
-               <img src="https://placehold.it/790x780" alt="" class="modal-work__photo">
-           </div>
-           <div class="modal-work__content">
-               <div class="modal-work__header">
-                   <h3 class="modal-work__title">Project title</h3>
-                   <div class="modal-work__info">category</div>
-               </div>
-               
-               <div class="modal-work__client">
-                   <div class="modal-work__client-title">Client:</div>
-                   <div class="modal-work__client-company">Creative Agency</div>
-               </div>
-               <div class="modal-work__text">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi, facilis a doloribus nisi odio. Aliquam ratione commodi, placeat cupiditate voluptatibus, quis, corporis expedita temporibus fuga eligendi voluptates cum delectus.</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quasi, facilis a doloribus nisi odio. Aliquam ratione commodi, placeat cupiditate voluptatibus, quis, corporis expedita temporibus fuga eligendi voluptates cum delectus.</p>
-                </div>
-               <div class="modal-work__footer">
-                   <button class="modal-work__btn" type="button"><img src="images/left-arrow.svg" height="8" alt=""> Previous</button>
-                   <button class="modal-work__btn" type="button">Next <img src="images/right-arrow.svg" height="8" alt=""> </button>
-               </div>
-           </div> <!-- /.modal-work__content -->
-       </div> <!-- /.modal-work -->
-               
-    </div> <!-- /.modal__dialog -->
-</div> <!-- /.modal -->
-
    
 <div class="modal" id="modal_hireme">
     <div class="modal__dialog modal__dialog--sm">
@@ -204,8 +167,8 @@
     
         <div class="contact">
             <div class="contact__left">
-                <h3 class="modal__title">Contacts</h3>
-                <h4 class="modal__subtitle">Call me or send request</h4>
+                <h3 class="modal__title">Контакти</h3>
+                <h4 class="modal__subtitle">Напишіть мені або подзвоніть</h4>
                 <ul class="contact__info">
                     <li class="contact__info-item">
                        <img class="contact__info-icon icon--sm" src="images/phone.svg" alt="">
@@ -218,16 +181,16 @@
                 </ul>
                 <form class="form" action="/" method="post">
                    <div class="form__group">
-                        <label class="label" for="input-email">Adress e-mail</label>
+                        <label class="label" for="input-email">Адреса e-mail</label>
                         <input type="email" class="input" for="" placeholder="mail@mail" id="input-email" name="input-email">
                     </div>
                     
                     <div class="form__group">
-                        <label class="label" for="input-text">Request</label>
-                        <textarea class="textarea" name="input-text" id="input-text" cols="30" rows="10">You request</textarea>
+                        <label class="label" for="input-text">Текст</label>
+                        <textarea class="textarea" name="input-text" id="input-text" cols="30" rows="10">Ваш запит</textarea>
                     </div>
                     <div class="text-right">
-                        <button class="hireme" type="submit">SEND</button>
+                        <button class="hireme" type="submit">Надіслати</button>
                     </div>
                 </form>
 
