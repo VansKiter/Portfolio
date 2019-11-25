@@ -4,6 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -1rem;
+    
+    @media @tablet {
+        margin: 0;
+    }
 }
 
 .portfolio_col {
@@ -12,5 +16,11 @@
     
     a {
         color: @black;
+    }
+    @media @tablet {
+        flex-basis: 50%;
+    }
+    @media @mobile {   
+        flex-basis: 100%;
     }
 }

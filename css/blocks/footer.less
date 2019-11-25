@@ -10,12 +10,30 @@
 .footer__inner {
     display: flex;
     justify-content: space-between;
+    
+    @media @tablet {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .footer__copy {
     display: flex;
+    
+    @media @mobile {
+        flex-direction: column;
+        font-size: .8rem;
+        justify-content: center;
+    }
+    
 }
-p.footer__text, .footer__link {
+p.footer__text,
+.footer__link {
     margin-right: 1.5rem;
+    
+    @media @mobile {
+        margin-right: 0;
+        align-self: center;
+    }
 }
 .footer__link {
     color: @black;
@@ -27,7 +45,10 @@ p.footer__text, .footer__link {
 .footer__social {
     display: flex;
     
+    @media @tablet {
+        margin-top: 1rem;
     
+    }
 }
 .social__icon {
     color: @black;
